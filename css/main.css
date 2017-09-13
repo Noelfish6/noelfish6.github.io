@@ -1,0 +1,414 @@
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/*intro page*/
+  #intro{
+    height: 100vh;
+    background: rgba(0,0,0,0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  article {
+    height: 80%;
+  }
+
+
+  body {
+    /*background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);*/
+    /*background-image: linear-gradient(to top, #daf2ed 0%, #3d99be 55%,#3ab5b0 100%);*/
+    background-image: linear-gradient(to top, #daf2ed 0%, white 100%);
+    font-family: Roboto, sans-serif;
+    font-size-adjust:0.508;
+    font-weight:200;
+    font-style:normal;
+    letter-spacing: .3px;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    padding: 0;
+  }
+
+  .color_18{
+    color: #333;
+  }
+
+  .row a:hover {
+    color: #91AD70;
+  }
+
+  #intro h1 {
+    /*font-weight: 100;*/
+  }
+
+  #name {
+    font-family: Oleo Script;
+    font-weight: bold;
+  }
+
+  .contact-info a {
+    text-decoration: none;
+    color: #333;
+  }
+
+  .col-sm-8{
+    position: center;
+  }
+
+  .clickers a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #333;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    line-height: 18px;
+    position: relative;
+    bottom: 3px;
+    padding: 2px 4px 2px 4px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    float: right;
+    margin: 0px 10px 0 0;
+    display: block;
+    -webkit-transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    -ms-transition: all 0.1s;
+    -o-transition: all 0.1s;
+    transition: all 0.1s;
+  }
+
+
+  /*scrolldown animation*/
+    #scrolldown {
+      position: absolute;
+      bottom: 5%;
+      left: 50%;
+      color: #333;
+    }
+
+    .bounce {
+      animation-name: bounce;
+    }
+
+    .animated {
+      animation-duration: 5s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+      animation-iteration-count:infinite;
+      -webkit-animation-iteration-count:infinite;
+    }
+
+    i.fa fa-angle-double-down fa-2x{
+      color: #333;
+    }
+
+    @-webkit-keyframes bounce { 
+      0%, 20%, 50%, 80%, 100% {-webkit-transform: translate(-50%, 0);} 
+      40% {-webkit-transform: translate(-50%, -20px);} 
+      60% {-webkit-transform: translate(-50%, -11px);} 
+    } 
+
+    @keyframes bounce { 
+      0%, 20%, 50%, 80%, 100% {transform: translate(-50%, 0);} 
+      40% {transform: translate(-50%, -20px);} 
+      60% {transform: translate(-50%, -10px);} 
+    } 
+
+    .bounce { 
+      -webkit-animation-name: bounce; 
+      animation-name: bounce; 
+    }
+
+  /*project setting*/
+
+    #projects .project2 h1 {
+      text-align: left;
+      letter-spacing: -1px;
+    }
+
+    #projects .project2 h3 {
+      font-size: 15px;
+      letter-spacing: -.5px;
+      font-style: italic;
+    }
+
+    #projects .project2 .sidebar {
+      height: 100%;
+      color: #333;
+      padding: 80px 50px;
+    }
+
+    #projects .project2 .sidebar h3 {
+      margin-bottom: 40px;
+    }
+
+    #projects .project2 .sidebar ul {
+      font-size: 0.8em;
+      font-weight: 300;
+      padding: 0;
+      margin-top: 50px;
+      list-style: none;
+      color: rgba(255, 255, 255, 1);
+      display: none;
+    }
+
+    #projects .project2 .sidebar li i {
+      transform: translateY(1px);
+      -webkit-transform: translateY(1px);
+      -ms-transform: translateY(1px);
+      margin-right: 5px;
+    }
+
+    #projects .project2 .gallery {
+      height: 700px;
+      padding: 0;
+      overflow: hidden;
+      position: relative;
+    }
+
+    #projects .project2 .gallery img {
+      height: 700px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      -webkit-transform: translateX(-50%) translateY(-50%);
+      -ms-transform: translateX(-50%) translateY(-50%);
+    }
+
+    #projects .project2 .white-text {
+      color: white;
+    }
+
+    #projects .project2 .white-text ul {
+      color: white
+    }
+
+/*see project button*/
+
+  #projects .project2 a.black-see-project{
+    color: #333;
+    padding: 2px 4px 2px 4px;
+    border: 1px solid #333;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    display: inline-block;
+    margin: 10px 0;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+    letter-spacing: -.5px;
+  }
+
+  #projects .project2 a.black-see-project:hover {
+    background-color: rgba(0,0,0,.5);
+  }
+
+  #projects .project2 a.white-see-project{
+    color: white;
+    padding: 2px 4px 2px 4px;
+    border: 1px solid white;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    display: inline-block;
+    margin: 10px 0;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+    letter-spacing: -.5px;
+  }
+
+  #projects .project2 a.white-see-project:hover {
+    background-color: rgba(255,255,255,.55);
+  }
+
+/*project background color*/
+
+  #projects #roadmap, #projects #roadmap .sidebar, #projects #roadmap .gallery {
+    background-color: #daf2ed;
+  }
+
+  #projects #FIRS, #projects #FIRS .sidebar, #projects #FIRS .gallery {
+    background-color: #1a193a;
+  }
+
+  #projects #airbnb, #projects #airbnb .sidebar, #projects #airbnb .gallery {
+    background-color: #fb4552;
+  }
+
+  #projects #dashboard, #projects #dashboard .sidebar, #projects #dashboard .gallery {
+    background-color: white;
+  }
+
+  #projects #media, #projects #media .sidebar, #projects #media .gallery {
+    background-color: #1c374c;
+  }
+
+  #projects #country, #projects #country .sidebar, #projects #country .gallery {
+    background-color: white;
+  }
+
+/*keep items aligned*/
+
+  .row-fluid{
+    display: flex;
+  }
+
+/*project page*/
+
+  #hr-white{
+    margin-top: 15px;
+    border: 0;
+    border-top: 1.5px solid white;
+    width: 20%;
+    margin-left: 0px;
+  }
+
+  #hr-black{
+    margin-top: 15px;
+    border: 0;
+    border-top: 1.5px solid #333;
+    width: 20%;
+    margin-left: 0px;
+  }
+
+  .project {
+    background-color: #333;
+    padding-bottom: 80px;
+  }
+
+  footer {
+      width: 100%;
+      overflow: hidden;
+      left: 0;
+      z-index: 999;
+      color: #F1F1F2;
+      background-color: #333;
+      padding-top: 10px; 
+  }
+
+  /*tags*/
+    .tags{
+      font-size: 10px;
+      background: rgba(0,0,0,.05);
+      border-radius: 3px;
+      padding: 3px 3px;
+      font-weight: 400;
+      display: inline-block;
+      position: relative; 
+      letter-spacing: -.5px;
+    }
+
+    .tags:hover { 
+      background-color: rgba(0,0,0,.15);
+    }
+
+    .black-tags{
+      color: white;
+      font-size: 10px;
+      background: rgba(255,255,255,.05);
+      border-radius: 3px;
+      padding: 3px 3px;
+      font-weight: 400;
+      display: inline-block;
+      position: relative; 
+      letter-spacing: -.5px;
+    }
+
+    .black-tags:hover { 
+    background-color: rgba(255,255,255,.15);
+    }
+
+
+/*responsive settings*/
+  /* Small devices (tablets, 768px and up) */
+  @media screen and (min-width: 768px) {
+      #main {
+        height: 100%;
+      }
+
+      .project {
+        padding-bottom: 72px;
+      }
+
+      div#project1.project {
+        padding-top:60px;
+      }
+
+      #projects .project .sidebar ul {
+        display: block;
+      }
+
+      .project-text {
+        padding: 30px 0px 30px 0px;
+      }
+
+      .project-text p {
+        font-size : 16px;
+        line-height : 24.4px;
+      }
+
+      #intro {
+        height: 100vh;
+        /*background-color: white;*/
+        background-size: 319px 529px;
+        background-position: 0px 75px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .lead {
+        position: relative;
+        top: 200px;
+        font-size: 21px;
+      }
+
+
+      .clickers a:hover {
+        border: 1px solid #91AD70;
+        color: #91AD70;
+      }
+
+      #name:hover {
+        color: #91AD70;
+      }
+
+      .row-fluid{
+        display: flex;
+      }
+
+  }
+
+  /* Medium devices (desktops, 992px and up) */
+  @media screen and (min-width: 992px) {
+
+      #main {
+        height: 100%;
+      }
+
+      .container {
+        width: 900px;
+      }
+
+      #intro {
+        height: 100vh;
+        /*background-color:white;*/
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      #projects .project .sidebar ul {
+        display: block;
+      }
+
+      .row-fluid{
+        display: flex;
+      }
+
+   }
+
