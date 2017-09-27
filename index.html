@@ -20,41 +20,34 @@
   </head>
 
   <body>
-
+    
     <div id="main" class="container">
-
-<!-- Introduction -->
-
-      <div id="intro" class="row">
-        <div class="col-sm-8">
-          <p class="lead">
+      <div id="particles-js"></div>
+      <div id="intro">
             <h1 class="font_0" style="font-weight: 100">Hello world<span class="color_18">!</span></h1>
             <h1 class="font_0">
               I<span class="color_18">'</span>m <i id="name">Zhengyan Yu</i><span class="color_18">.</span>
             </h1>
             <br />
             I'm an information designer and data analysist who love to explore the meaning and beauty of data. Before studying information design, I got an Economic master degree and worked in economic academia, public relation, and journalism.
-
             <!-- <br /><br />You can see <b>my story <a class="color_18" href="https://medium.com/@noelfish" target="_blank" style="text-decoration: underline;">here</a></b>. -->
 
             <br /><br /><br />
 
-            <span class="contact-info">
+            <section class="contact-info">
               <a href="mailto:noel.fish6@gmail.com" target="_blank"><i class="fa fa-telegram fa-lg"></i></a>
               <a href="https://twitter.com/noelfish" target="_blank"><i class="fa fa-twitter fa-lg"></i></a>
               <a href="https://medium.com/@noelfish" target="_blank"><i class="fa fa-medium fa-lg"></i></a>
               <a href="https://www.linkedin.com/in/zheng-yan-yu/" target="_blank"><i class="fa fa-linkedin-square fa-lg"></i></a>
               <a href="https://github.com/Noelfish6" target="_blank"><i class="fa fa-github-alt fa-lg"></i></a>
-            </span>
+            </section>
 
             <span class="clickers">
               <a href="doc/resume_Zhengyan Yu.pdf" target="_blank">R&#233;sum&#233;</a>
             </span><br /><br /><br />
-          </p>
-        </div>
-
-        <div id="scrolldown" class="animated bounce"><a href="#projects"><i class="fa fa-angle-double-down fa-2x" aria-hidden="true"></i></a></div>
-      
+          
+    
+     
       </div>
     </div>
 
@@ -62,6 +55,29 @@
 <!-- PROJECTS -->
 
 <section id="projects">
+
+  <!-- FIRS -->
+  <article class="row-fluid project2 .white-text" id="FIRS">
+        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-9 gallery">
+        <img src="images/FIRS8.png" style="margin-left: 200px">
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 sidebar">
+          <div class="caption">
+            <h1 style="color:white;">Using data analysis and visualization to improve safety</h1>
+            <hr id="hr-white" />
+            <h3 style="color:white;">Personal course work + team contest</h3>
+            <p style="color:white;">
+              A poster visualizes car accidents data of USA and tries to explain why some states are more dangerous than others. </br>The data analysis is used for supporting a product which is used to decrease the car accidents.  
+            </p>
+            </br>
+            <p class="black-tags">data analysis</p> <p class="black-tags">data visualization</p> <p class="black-tags">R</p> <p class="black-tags">Qgis</p> <p class="black-tags">Adobe Illustrator</p> <p class="black-tags">product design</p>
+            </br>
+            </br>
+            <a href="https://medium.com/@noelfish/driving-safety-in-the-usa-f8f88f8fbb46" target="_blank" class="white-see-project">see project</a>
+          </div>
+        </div>
+  </article>  
 
   <!-- roadmap -->
   <article class="row-fluid project2" id="roadmap">
@@ -86,28 +102,7 @@
         </div>
   </article>
 
-  <!-- FIRS -->
-  <article class="row-fluid project2 .white-text" id="FIRS">
-        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-9 gallery">
-        <img src="images/FIRS8.png" style="margin-left: 200px">
-        </div>
 
-        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 sidebar">
-          <div class="caption">
-            <h1 style="color:white;">Using data analysis and visualization to improve safety</h1>
-            <hr id="hr-white" />
-            <h3 style="color:white;">Personal course work + team contest</h3>
-            <p style="color:white;">
-              A poster visualizes car accidents data of USA and tries to explain why some states are more dangerous than others. </br>The data analysis is used for supporting a product which is used to decrease the car accidents.  
-            </p>
-            </br>
-            <p class="black-tags">data analysis</p> <p class="black-tags">data visualization</p> <p class="black-tags">R</p> <p class="black-tags">Qgis</p> <p class="black-tags">Adobe Illustrator</p> <p class="black-tags">product design</p>
-            </br>
-            </br>
-            <a href="https://medium.com/@noelfish/driving-safety-in-the-usa-f8f88f8fbb46" target="_blank" class="white-see-project">see project</a>
-          </div>
-        </div>
-  </article>
 
   <!-- airbnb -->
   <article class="row-fluid project2 .white-text" id="airbnb">
@@ -210,24 +205,9 @@
       </div>
       </footer>
 
-<!-- dropdown animation -->
-    <script>
-      $('a[href*=#]:not([href=#])').click(function() {
-      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-          || location.hostname == this.hostname) {
 
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-             if (target.length) {
-               $('html,body').animate({
-                   scrollTop: target.offset().top
-              }, 1000);
-              return false;
-          }
-      }
-      });
-
-</script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
 
   </body>
 </html>
