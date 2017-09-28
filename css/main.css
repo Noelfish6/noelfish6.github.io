@@ -82,6 +82,7 @@ canvas{
 
   .inline {
     display: inline;
+    z-index: 999;
   }
 
   .contact-info{
