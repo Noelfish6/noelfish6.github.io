@@ -23,7 +23,7 @@
     <div id="particles-js"></div>
     <div id="main" class="container">
       
-      
+
       <div id="intro">
             <h1 class="font_0" style="font-weight: 100">Hello world<span class="color_18">!</span></h1>
             <h1 class="font_0">
@@ -44,6 +44,7 @@
             </section>
 
             <span class="clickers">
+              <a href="#projects">Portfolio</a>
               <a href="doc/resume_Zhengyan Yu.pdf" target="_blank">R&#233;sum&#233;</a>
             </span><br /><br /><br /> 
       </div>
@@ -202,6 +203,25 @@
         <p>© 2017 Zhengyan Yu. All Rights Reserved.</p>
       </div>
       </footer>
+
+<!-- dropdown animation -->
+    <script>
+      $('a[href*=#]:not([href=#])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+          || location.hostname == this.hostname) {
+
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+             if (target.length) {
+               $('html,body').animate({
+                   scrollTop: target.offset().top
+              }, 1000);
+              return false;
+          }
+      }
+      });
+
+</script>
 
 
     <script src="particles.js"></script>
