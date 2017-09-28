@@ -76,6 +76,7 @@ canvas{
 
   .contact-info{
     z-index: 999;
+    float:left;
   }
 
   .col-sm-8{
@@ -188,7 +189,7 @@ canvas{
   }
 
   #projects .project2 a.black-see-project:hover {
-    background-color: #D0104C;
+    background-color: #D3D3D3;
   }
 
   #projects .project2 a.white-see-project{
