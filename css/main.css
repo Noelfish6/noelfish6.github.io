@@ -397,7 +397,12 @@ canvas{
         font-family: Helvetica, Arial, sans-serif;
         font-weight: bold;
         height: 100%;
-      }      
+      }
+
+      article {
+        height: 80%;
+        background: rgba(0,0,0,0);
+  }      
 
   }
 
@@ -446,6 +451,11 @@ canvas{
         font-weight: bold;
         height: 100%;
       }
+
+      article {
+        height: 80%;
+        background: rgba(0,0,0,0);
+  }
 
    }
 
