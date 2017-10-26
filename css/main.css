@@ -236,6 +236,10 @@ canvas{
     background-color: #fb4552;
   }
 
+  #projects #fortune, #projects #fortune .sidebar, #projects #fortune .gallery {
+    background-color: #3A4552;
+  }
+  
   #projects #dashboard, #projects #dashboard .sidebar, #projects #dashboard .gallery {
     background-color: white;
   }
